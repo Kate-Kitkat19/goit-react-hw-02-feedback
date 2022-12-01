@@ -1,14 +1,5 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-  padding: 10px;
-`;
-
-export const Title = styled.h2`
-  margin: 0;
-  margin-bottom: 5px;
-  padding: 5px 0;
-`;
 
 export const List = styled.ul`
   list-style: none;
