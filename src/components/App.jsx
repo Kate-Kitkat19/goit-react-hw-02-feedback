@@ -6,5 +6,5 @@ export const App = () => {
     <Layout>
       <FeedbackForm></FeedbackForm>
     </Layout>
-  );
+  )
 };

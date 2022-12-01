@@ -1,19 +1,22 @@
 import { PropTypes } from 'prop-types';
-
+import { Wrapper, Title, Button } from './Controls.styled';
 export const Controls = ({ onBtnClick }) => {
   return (
-    <div>
-      <h2>Please leave your feedback</h2>
-      <button type="button" onClick={onBtnClick}>
+    <Wrapper>
+      <Title>Please leave your feedback</Title>
+
+      <Button type="button" onClick={onBtnClick} value="good">
         Good
-      </button>
-      <button type="button" onClick={onBtnClick}>
+      </Button>
+
+      <Button type="button" onClick={onBtnClick} value="neutral">
         Neutral
-      </button>
-      <button type="button" onClick={onBtnClick}>
+      </Button>
+
+      <Button type="button" onClick={onBtnClick} value="bad">
         Bad
-      </button>
-    </div>
+      </Button>
+    </Wrapper>
   );
 };
 

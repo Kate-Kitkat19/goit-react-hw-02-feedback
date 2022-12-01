@@ -11,7 +11,6 @@ export class FeedbackForm extends Component {
 
   onClick = evt => {
     const value = evt.target.textContent.toLowerCase();
-    console.log('Натиснули на кнопку', { value });
     this.setState(prevValue => {
       return { [value]: prevValue[value] + 1 };
     });
@@ -24,18 +23,9 @@ export class FeedbackForm extends Component {
   }
 
   countPositiveFeedbackPercentage(totalValue) {
-    console.log(
-      'FeedbackForm   countPositiveFeedbackPercentage   totalValue',
-      totalValue
-    );
     const { good } = this.state;
-    console.log('FeedbackForm   countPositiveFeedbackPercentage   good', good);
-    if (good) {
-      const percentage = good / totalValue;
-      return percentage.toFixed(2) * 100;
-    } else {
-      return '0';
-    }
+    const percentage = good ? ((good / totalValue) * 100).toFixed(0) : '0';
+    return percentage;
   }
 
   render() {
