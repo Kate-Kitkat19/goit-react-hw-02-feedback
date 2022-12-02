@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const List = styled.ul`
   list-style: none;
   margin: 0;
@@ -10,6 +9,8 @@ export const List = styled.ul`
 `;
 
 export const Button = styled.button`
+  width: fit-content;
+  max-width: 100%;
   margin: 0;
   padding: 10px;
   cursor: pointer;

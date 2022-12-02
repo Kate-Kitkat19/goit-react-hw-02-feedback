@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.section`
   padding: 15px;
-  margin: 0 auto;
+  width: 600px;
 `;
 
 export const Title = styled.h2`
